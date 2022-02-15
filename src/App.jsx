@@ -8,13 +8,13 @@ import Carrusel from "./components/carrusel/Carrusel";
 function App() {
   return (
     <div className="App">
-      {/*  <div className="graella">
+      <div className="graella">
         <Graella />
       </div>
       <br />
       <div>
         <Contador />
-      </div> */}
+      </div>
       <br />
       <div className="ocultar-mostrar">
         <Acordeo />

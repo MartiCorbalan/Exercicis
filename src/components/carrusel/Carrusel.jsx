@@ -13,17 +13,41 @@ function Carrusel() {
     "https://www.fundacion-affinity.org/sites/default/files/dia-de-los-animales.jpg",
   ];
 
-  const [actual, setActual] = useState();
+  const [actual, setActual] = useState(0);
 
-  const next = () => {};
-  const last = () => {};
+  const next = () => {
+    console.log("arriba");
+    console.log(imatges.length);
+    if (actual >= imatges.length - 1) {
+      setActual(0);
+    } else {
+      setActual((n) => n + 1);
+    }
+  };
+
+  const last = () => {
+    if (actual <= 0) {
+      setActual(imatges.length - 1);
+    } else {
+      setActual(actual - 1);
+    }
+  };
+
+  const act = () => {
+    setActual(imatges[0]);
+  };
   return (
     <div className="App">
       <Botons value={"<"} funcioClicar={last} />
 
-      <Imatge src={imatges[0]} />
+      <Imatge src={imatges[actual]} />
 
       <Botons value={">"} funcioClicar={next} />
+      <br />
+      <Botons value={"1"} funcioClicar={act} />
+      <Botons value={"2"} funcioClicar={next} />
+      <Botons value={"3"} funcioClicar={next} />
+      <Botons value={"4"} funcioClicar={next} />
     </div>
   );
 }

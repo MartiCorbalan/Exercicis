@@ -7,24 +7,23 @@ import { useState } from "react";
 function Contador() {
   const [display, setDisplay] = useState(0);
   const [operacio, setOperacio] = useState(null);
-  let bol = false;
 
   const operar = (input) => {
     setOperacio(input);
     console.log(operacio);
     /* setDisplay(display + parseInt(input)); */
-    if (operacio === "+1") {
+    if (operacio === "+1" && display < 10) {
       console.log("a sumat");
       /* setDisplay(display + parseInt(input)); */
-      setDisplay((m) => (m === 10 ? m : m + 1));
-    } else if (operacio === "+5") {
+      setDisplay(display + 1);
+    } else if (operacio === "+5" && display < 6) {
       /*  setDisplay(display + parseInt(input)); */
-      setDisplay((m) => (m === 10 ? m : m + 5));
+      setDisplay(display + 5);
     }
   };
 
   const restar = () => {
-    setDisplay((m) => (m === 0 ? m : m - 1));
+    setDisplay((m) => (m === 0 ? m : display - 1));
   };
 
   return (
