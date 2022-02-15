@@ -17,22 +17,3 @@
   height: 100%;
   position: absolute;
 }
-.botones {
-}
-.resultat {
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
-  margin: auto;
-}
-.deshidden {
-  visibility: hidden;
-}
-.desshow {
-  display: block;
-}
-
-.img {
-  width: 300px;
-  height: 200px;
-}

@@ -25,14 +25,9 @@
   background-color: aqua;
   margin: auto;
 }
-.deshidden {
+.title2 {
   visibility: hidden;
 }
-.desshow {
+.title3 {
   display: block;
-}
-
-.img {
-  width: 300px;
-  height: 200px;
 }
