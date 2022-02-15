@@ -2,17 +2,18 @@ import Imatge from "./component/Imatge";
 import Botons from "./component/Botons";
 
 import { useState } from "react";
+
 function Carrusel() {
-  let imatges = [
-    "https://www.bbva.com/wp-content/uploads/2021/03/animales-peligro-extincion-sostenibilidad-bbva.jpg",
+  
+const imatges = [
+  "https://www.bbva.com/wp-content/uploads/2021/03/animales-peligro-extincion-sostenibilidad-bbva.jpg",
 
-    "http://www.masquesaludanimal.es//posts/asset_upload_file39075_613728.jpg",
+  "http://www.masquesaludanimal.es//posts/asset_upload_file39075_613728.jpg",
 
-    "https://www.hogarmania.com/archivos/202109/animales-felices-portada-1280x720x80xX.jpg",
+  "https://www.hogarmania.com/archivos/202109/animales-felices-portada-1280x720x80xX.jpg",
 
-    "https://www.fundacion-affinity.org/sites/default/files/dia-de-los-animales.jpg",
-  ];
-
+  "https://www.fundacion-affinity.org/sites/default/files/dia-de-los-animales.jpg",
+];
   const [actual, setActual] = useState(0);
 
   const next = () => {
@@ -33,8 +34,8 @@ function Carrusel() {
     }
   };
 
-  const act = () => {
-    setActual(imatges[0]);
+  const act = (m) => {
+    setActual(m);
   };
   return (
     <div className="App">
@@ -44,6 +45,9 @@ function Carrusel() {
 
       <Botons value={">"} funcioClicar={next} />
       <br />
+      {/* {imatges.map((imatge, index) => ( 
+        <Botons value={index + 1} funcioClicar={act(index)} />
+      ))} */}
       <Botons value={"1"} funcioClicar={act} />
       <Botons value={"2"} funcioClicar={next} />
       <Botons value={"3"} funcioClicar={next} />
