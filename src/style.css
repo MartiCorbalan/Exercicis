@@ -36,3 +36,23 @@
   width: 300px;
   height: 200px;
 }
+
+.caja {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+  margin: auto;
+}
+
+.clicat {
+  font-size: 40px;
+
+  width: 30%;
+}
+.noclicat {
+  width: 30%;
+  font-size: 40px;
+  display: block;
+}

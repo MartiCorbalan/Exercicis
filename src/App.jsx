@@ -2,25 +2,29 @@ import "./App.css";
 import "./style.css";
 
 /* import Graella from "./components/graella/Graella";
-import Contador from "./components/contador/Contador"; 
-import Acordeo from "./components/acordeo/Acordeo";*/
-import Carrusel from "./components/carrusel/Carrusel";
+import Contador from "./components/contador/Contador";
+import Acordeo from "./components/acordeo/Acordeo"; 
+import Carrusel from "./components/carrusel/Carrusel";*/
+import Tres_en_ratlla from "./components/tres-en-ratlla/Tres_en_ratlla";
 function App() {
   return (
     <div className="App">
-     {/*  <div className="graella">
+      {/*  <div className="graella">
         <Graella />
       </div>
       <br />
       <div>
         <Contador />
-      </div> */}
+      </div>
       <br />
-     {/*  <div className="ocultar-mostrar">
+      <div className="ocultar-mostrar">
         <Acordeo />
       </div> */}
-      <div className="">
+      {/*  <div className="">
         <Carrusel />
+      </div> */}
+      <div>
+        <Tres_en_ratlla />
       </div>
     </div>
   );
