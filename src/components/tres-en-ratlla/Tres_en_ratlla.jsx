@@ -13,7 +13,7 @@ function Tres_en_ratlla() {
     "_",
   ]);
 
-  
+  const [guanyador, setGuanyador] = useState(null) //guarda el ganador
 
   const [contador, setContador] = useState(0)
 
@@ -22,12 +22,17 @@ function Tres_en_ratlla() {
   //se llama cada vez que comprueba si acabar es true
   useEffect(()=>{
     if(acabar){
-      alert("has guanyat")
+      if(guanyador !== null){ //si alguien a ganado
+        alert(`a guanyat ${guanyador}` )
+      }else{
+        alert('empateeeee')
+      }
     }
   },[acabar])
 
   //cada vez que array modifica llama a funcion ganador
   useEffect(()=>{
+    setAcabar(!array.includes("_"));
     ganador()
   },[array])
 
@@ -39,20 +44,22 @@ function Tres_en_ratlla() {
     }
     if(contador % 2 === 0) {
       console.log("ha posat x");
-      if(copia[index] === "_"){
+      if(copia[index] === "_"){ //si pulsas en un _ pone una X en un pulsar PAR (cada 2)
               copia[index] = "X";
       }
-      setArray(copia);
+      setArray(copia); //guarda el array copiado modificado
     } else {
-      console.log("ha posat 0");
-      if(copia[index] === "_"){
+      console.log("ha posat 0"); 
+      if(copia[index] === "_"){ //si pulsas en un _ pone un 0 en un pulsar IMPAR.
         copia[index] = "0";
       }
       setArray(copia);
     }
-    setContador(contador+1);
+    setContador(contador+1); //por cada click pon +1 para comprovar si es par o impar
 
   };
+
+  
 
   const ganador = () =>{
     const lines = [
@@ -71,8 +78,11 @@ function Tres_en_ratlla() {
       const[a, b, c] = lines[i];
       if(array[a] !== "_" && array[b] !== "_" && array[c] !== "_"){
         if(array[a] && array[a] === array[b] && array[a] === array[c]){
-        setAcabar(true) 
-      }
+
+        setGuanyador(array[a])
+        setAcabar(true)
+
+        }
       }
       
     }
@@ -81,6 +91,7 @@ function Tres_en_ratlla() {
   return (
     <div className="App">
       <br />
+      <h2>Tres en Ratlla</h2>
       <div className="caja">
         <br />
 
