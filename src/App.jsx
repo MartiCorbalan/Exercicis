@@ -1,4 +1,5 @@
 import "./App.css";
+
 import "./style.css";
 
 /* import Graella from "./components/graella/Graella";
@@ -7,8 +8,9 @@ import Acordeo from "./components/acordeo/Acordeo";
 import Carrusel from "./components/carrusel/Carrusel";
 import Tres_en_ratlla from "./components/tres-en-ratlla/Tres_en_ratlla";
 import Rellotge from "./components/rellotge-digital/Rellotge";
-*/
 
+*/
+import Sumarnums from "./components/sumarnumeros/Sumarnums";
 import Rellotge_analogic from "./components/rellotge-analogic/Rellotge_analogic";
 function App() {
   return (
@@ -27,14 +29,17 @@ function App() {
       {/*  <div className="">
         <Carrusel />
       </div> */}
-      {/* <div>
+     {/*  <div>
         <Tres_en_ratlla />
       </div>
       <div>
         <Rellotge />
-      </div> */}
+      </div> 
       <div>
         <Rellotge_analogic />
+      </div>*/}
+      <div>
+        <Sumarnums/>
       </div>
       <br />
       <br />

@@ -81,61 +81,66 @@
 .btn-date {
   margin: auto;
 }
-
+/* rellotge analogic */
 .rellotge {
-  border-radius: 100%;
-  border: 1px solid #db1709;
-  width: 250px;
-  height: 250px;
-  margin: auto;
   position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 .segons {
   position: absolute;
-  height: 3px;
-  width: 50px;
-  border: 1px solid #09db25;
-  margin: auto;
-  top: 120px;
+  top: 0px;
   left: 100px;
+  width: 2px;
+  height: 100px;
+  background-color: red;
   transform-origin: bottom center;
 }
 .minuts {
   position: absolute;
-  height: 3px;
-  width: 90px;
+  height: 90px;
+  width: 2px;
   border: 1px solid #090cdb;
   margin: auto;
-  top: 120px;
-  left: 80px;
+  top: 10px;
+  left: 100px;
+  transform-origin: bottom center;
 }
 
 .hora {
   position: absolute;
-  height: 3px;
-  width: 120px;
+  height: 50px;
+  width: 2px;
   border: 1px solid #53c24f;
   margin: auto;
-  top: 113px;
-  left: 70px;
+  top: 50px;
+  left: 100px;
+  transform-origin: bottom center;
 }
 .tres {
-  position: absolute;
-  margin: auto;
-  top: 100px;
-  left: 220px;
+  right: 0;
+  top: 70px;
 }
 
 .sis {
-  position: absolute;
-  margin: auto;
-  top: 200px;
-  left: 120px;
+  bottom: 0;
+  left: 90px;
 }
 .nou {
+  top: 70px;
+  left: 0px;
+}
+.dotze{
+  left: 90px;
+  top: 0px;
+}
+
+.nhora{
+  width: 20px;
+  height: 20px;
   position: absolute;
-  margin: auto;
-  right: 220px;
-  top: 100px;
 }
