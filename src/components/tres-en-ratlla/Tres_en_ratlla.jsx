@@ -13,55 +13,59 @@ function Tres_en_ratlla() {
     "_",
   ]);
 
-  const [guanyador, setGuanyador] = useState(null) //guarda el ganador
+  const [guanyador, setGuanyador] = useState(null); //guarda el ganador
 
-  const [contador, setContador] = useState(0)
+  const [contador, setContador] = useState(0);
 
-  const [acabar, setAcabar] = useState(false)
+  const [acabar, setAcabar] = useState(false);
   //comprueva si acabar se ha modificado
   //se llama cada vez que comprueba si acabar es true
-  useEffect(()=>{
-    if(acabar){
-      if(guanyador !== null){ //si alguien a ganado
-        alert(`a guanyat ${guanyador}` )
-      }else{
-        alert('empateeeee')
+  useEffect(() => {
+    if (acabar) {
+      if (guanyador !== null) {
+        //si alguien a ganado
+        alert(`a guanyat ${guanyador}`);
+      } else {
+        alert("empateeeee");
       }
     }
-  },[acabar])
+  }, [acabar]);
 
   //cada vez que array modifica llama a funcion ganador
-  useEffect(()=>{
+  useEffect(() => {
     setAcabar(!array.includes("_"));
-    ganador()
-  },[array])
-
+    ganador();
+  }, [array]);
 
   const click = (index) => {
     let copia = [...array];
-    if (acabar ) { //comprova si a guanyat es true
+    if (acabar) {
+      //comprova si a guanyat es true
       return alert("el joc s'ha acabat, no segueixis provant");
     }
-    if(contador % 2 === 0) {
+    if (contador % 2 === 0) {
       console.log("ha posat x");
-      if(copia[index] === "_"){ //si pulsas en un _ pone una X en un pulsar PAR (cada 2)
-              copia[index] = "X";
+      if (copia[index] === "_") {
+        //si pulsas en un _ pone una X en un pulsar PAR (cada 2)
+        copia[index] = "X";
       }
       setArray(copia); //guarda el array copiado modificado
     } else {
-      console.log("ha posat 0"); 
-      if(copia[index] === "_"){ //si pulsas en un _ pone un 0 en un pulsar IMPAR.
+      console.log("ha posat 0");
+      if (copia[index] === "_") {
+        //si pulsas en un _ pone un 0 en un pulsar IMPAR.
         copia[index] = "0";
       }
       setArray(copia);
     }
-    setContador(contador+1); //por cada click pon +1 para comprovar si es par o impar
-
+    setContador(contador + 1); //por cada click pon +1 para comprovar si es par o impar
   };
 
-  
+  const clear = () => {
+    setArray(["_", "_", "_", "_", "_", "_", "_", "_", "_"]);
+  };
 
-  const ganador = () =>{
+  const ganador = () => {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -73,20 +77,16 @@ function Tres_en_ratlla() {
       [2, 4, 6],
     ];
 
-    
-    for(let i = 0 ; i < lines.length; i++){
-      const[a, b, c] = lines[i];
-      if(array[a] !== "_" && array[b] !== "_" && array[c] !== "_"){
-        if(array[a] && array[a] === array[b] && array[a] === array[c]){
-
-        setGuanyador(array[a])
-        setAcabar(true)
-
+    for (let i = 0; i < lines.length; i++) {
+      const [a, b, c] = lines[i];
+      if (array[a] !== "_" && array[b] !== "_" && array[c] !== "_") {
+        if (array[a] === array[b] && array[a] === array[c]) {
+          setGuanyador(array[a]);
+          setAcabar(true);
         }
       }
-      
     }
-  }
+  };
 
   return (
     <div className="App">
@@ -106,6 +106,7 @@ function Tres_en_ratlla() {
           )
         )}
       </div>
+      <button onClick={clear}>Reiniciar</button>
     </div>
   );
 }

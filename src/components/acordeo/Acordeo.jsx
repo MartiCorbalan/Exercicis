@@ -45,7 +45,7 @@ function Acordeo() {
               text={titul.text}
               descripcio={titul.descripcio}
               funcioClicar={aparecer}
-              clas={index === title ? "deshidden" : "desshow"}
+              clas={index === title ? "desshow" : "deshidden"}
               ntitle={index}
             />
           )

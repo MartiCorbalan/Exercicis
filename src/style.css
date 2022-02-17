@@ -42,7 +42,7 @@
   height: 800px;
   display: flex;
   flex-wrap: wrap;
-  
+
   margin: auto;
 }
 
@@ -55,4 +55,87 @@
   width: 30%;
   font-size: 40px;
   display: block;
+}
+
+.box-clock {
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+  margin: auto;
+}
+.hora {
+  height: 60px;
+  width: 140px;
+  background-color: rgb(194, 189, 183);
+  margin: auto;
+}
+.data {
+  height: 60px;
+  width: 140px;
+  background-color: antiquewhite;
+}
+
+.amagar-data {
+  visibility: hidden;
+}
+.btn-date {
+  margin: auto;
+}
+
+.rellotge {
+  border-radius: 100%;
+  border: 1px solid #db1709;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+}
+
+.segons {
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  border: 1px solid #09db25;
+  margin: auto;
+  top: 120px;
+  left: 100px;
+  transform-origin: bottom center;
+}
+.minuts {
+  position: absolute;
+  height: 3px;
+  width: 90px;
+  border: 1px solid #090cdb;
+  margin: auto;
+  top: 120px;
+  left: 80px;
+}
+
+.hora {
+  position: absolute;
+  height: 3px;
+  width: 120px;
+  border: 1px solid #53c24f;
+  margin: auto;
+  top: 113px;
+  left: 70px;
+}
+.tres {
+  position: absolute;
+  margin: auto;
+  top: 100px;
+  left: 220px;
+}
+
+.sis {
+  position: absolute;
+  margin: auto;
+  top: 200px;
+  left: 120px;
+}
+.nou {
+  position: absolute;
+  margin: auto;
+  right: 220px;
+  top: 100px;
 }
