@@ -27,7 +27,7 @@ function Rellotge() {
       <br />
       <h2>Rellotge digital</h2>
       <div className="box-clock">
-        <p className="hora">
+        <p className="hora2">
           {data.getHours()}: {data.getMinutes()}: {data.getSeconds()}
         </p>
         <br />

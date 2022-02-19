@@ -63,11 +63,12 @@
   background-color: gray;
   margin: auto;
 }
-.hora {
+.hora2 {
   height: 60px;
   width: 140px;
   background-color: rgb(194, 189, 183);
   margin: auto;
+  
 }
 .data {
   height: 60px;
