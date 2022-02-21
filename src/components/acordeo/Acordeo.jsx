@@ -1,5 +1,4 @@
 import "./App.css";
-import "./style.css";
 
 import Titul from "./component/Titul";
 

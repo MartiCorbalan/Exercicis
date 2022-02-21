@@ -38,15 +38,18 @@ function Carrusel() {
   };
   return (
     <div className="App">
-      <Botons value={"<"} funcioClicar={last} />
+      <div className="carrusel">
+        <br />
+        <Botons value={"<"} funcioClicar={last} />
 
-      <Imatge src={imatges[actual]} />
+        <Imatge src={imatges[actual]} />
 
-      <Botons value={">"} funcioClicar={next} />
-      <br />
-      {imatges.map((imatge, index) => (
-        <Botons value={index + 1} funcioClicar={() => act(index)} />
-      ))}
+        <Botons value={">"} funcioClicar={next} />
+        <br />
+        {imatges.map((imatge, index) => (
+          <Botons value={index + 1} funcioClicar={() => act(index)} />
+        ))}
+      </div>
     </div>
   );
 }

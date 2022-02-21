@@ -16,7 +16,6 @@ function Rellotge() {
   }, []);
 
   /*  const [time, changeTime] = useState(new Date().toLocaleTimeString());
-
   useEffect(function () {
     setInterval(() => {
       changeTime(new Date().toLocaleTimeString());
@@ -27,7 +26,8 @@ function Rellotge() {
       <br />
       <h2>Rellotge digital</h2>
       <div className="box-clock">
-        <p className="hora">
+        <br />
+        <p className="hora2">
           {data.getHours()}: {data.getMinutes()}: {data.getSeconds()}
         </p>
         <br />
@@ -35,7 +35,7 @@ function Rellotge() {
           {data.toDateString()}
         </p>
 
-        <button className="btn-date" onClick={Data}>
+        <button className="btn-date btn btn-light" onClick={Data}>
           Veure/Amagar data
         </button>
         {/*  <p>{time}</p> */}

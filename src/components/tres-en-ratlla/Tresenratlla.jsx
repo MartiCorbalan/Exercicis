@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Tres_en_ratlla() {
+function Tresenratlla() {
   const [array, setArray] = useState([
     "_",
     "_",
@@ -100,15 +100,20 @@ function Tres_en_ratlla() {
             titul, //valor
             index //posicio del array
           ) => (
-            <button className="clicat" onClick={() => click(index)}>
+            <button
+              className="clicat btn btn-danger"
+              onClick={() => click(index)}
+            >
               {array[index]}
             </button>
           )
         )}
       </div>
-      <button onClick={clear}>Reiniciar</button>
+      <button className="btn btn-danger" onClick={clear}>
+        Reiniciar
+      </button>
     </div>
   );
 }
 
-export default Tres_en_ratlla;
+export default Tresenratlla;

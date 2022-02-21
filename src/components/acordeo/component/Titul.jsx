@@ -7,8 +7,10 @@ export default function Titul({
 }) {
   return (
     <>
-      <div className={"title"} onClick={() => funcioClicar(ntitle)}>
-        <p>{text}</p>
+      <div className={"title "}>
+        <p className="acordeo" onClick={() => funcioClicar(ntitle)}>
+          {text}
+        </p>
         <p className={clas}>{descripcio}</p>
       </div>
     </>

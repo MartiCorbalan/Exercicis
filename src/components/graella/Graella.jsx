@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import "./App.css";
-import "./style.css";
+
 import Imagen from "./component/Imagen";
 
 import { useState } from "react";
@@ -33,23 +33,25 @@ function Graella() {
       {" "}
       <br />
       <div className="graella">
-        {imatges.map(
-          (
-            imatge,
-            index //imatge es el valor i index la posicio del array
-          ) => (
-            <Imagen
-              src={imatge}
-              funcioClicar={fullscreen}
-              clas={
-                index === posicio
-                  ? "fullscreen" //si la posicion es la misma que la imagen, aplicamos la classe fullscreen
-                  : ""
-              }
-              nimg={index}
-            />
-          )
-        )}
+        <div className="imatges">
+          {imatges.map(
+            (
+              imatge,
+              index //imatge es el valor i index la posicio del array
+            ) => (
+              <Imagen
+                src={imatge}
+                funcioClicar={fullscreen}
+                clas={
+                  index === posicio
+                    ? "fullscreen" //si la posicion es la misma que la imagen, aplicamos la classe fullscreen
+                    : ""
+                }
+                nimg={index}
+              />
+            )
+          )}
+        </div>
       </div>
     </div>
   );

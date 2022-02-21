@@ -1,5 +1,5 @@
 import "./App.css";
-import "./style.css";
+
 import Botons from "./component/Botons";
 import Display from "./component/Display";
 import { useState } from "react";
@@ -28,13 +28,15 @@ function Contador() {
 
   return (
     <div className="App">
-      <div>
+      <h1>Comptador</h1>
+      <div className="">
         <Display text={display} />
-      </div>
-      <div>
-        <Botons value={"+1"} funcioClicar={operar} />
-        <Botons value={"-1"} funcioClicar={restar} />
-        <Botons value={"+5"} funcioClicar={operar} />
+
+        <div>
+          <Botons value={"+1"} funcioClicar={operar} />
+          <Botons value={"-1"} funcioClicar={restar} />
+          <Botons value={"+5"} funcioClicar={operar} />
+        </div>
       </div>
     </div>
   );

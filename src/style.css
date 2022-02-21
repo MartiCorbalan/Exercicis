@@ -1,10 +1,35 @@
+/* navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+li {
+  float: left;
+}
+
+.title-main {
+  margin: 0 auto 0 770px;
+}
+.title-main h4 {
+  margin: 0 auto 0 100px;
+}
+/*  */
+
 .graella {
   margin: auto;
-  background-color: grey;
   width: 800px;
-  height: 800px;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+.imatges {
+  position: relative;
 }
 .Avatar {
   height: 300px;
@@ -13,6 +38,8 @@
 }
 
 .fullscreen {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -22,7 +49,17 @@
 .resultat {
   width: 200px;
   height: 200px;
-  background-color: aqua;
+  background-color: #a19d9c;
+  margin: auto;
+  border-radius: 20%;
+}
+
+/* acordeo */
+.acordeo {
+  background-color: #92929b;
+  width: 150px;
+  height: 30px;
+  border: black 2px solid;
   margin: auto;
 }
 .deshidden {
@@ -30,49 +67,61 @@
 }
 .desshow {
   display: block;
+  font-weight: bold;
 }
 
+/*  */
+
+/* carrusel */
 .img {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
 }
-
+.carrusel {
+  border: black 2px solid;
+  width: 500px;
+  margin: auto;
+}
+/*  */
+/* tres en ratlla */
 .caja {
-  width: 800px;
+  width: 700px;
   height: 800px;
   display: flex;
   flex-wrap: wrap;
-
   margin: auto;
 }
 
 .clicat {
   font-size: 40px;
-
-  width: 30%;
+  background-color: #23cce2;
+  width: 33.33%;
 }
-.noclicat {
-  width: 30%;
-  font-size: 40px;
-  display: block;
-}
+/*  */
 
+/* sumador numeros */
+.sum-num {
+  background-color: #5e60d3;
+  border-radius: 10%;
+  width: 600px;
+  height: 250px;
+  margin: auto;
+}
+/*  */
+
+/* rellotge digital */
 .box-clock {
   width: 300px;
   height: 200px;
   background-color: gray;
   margin: auto;
 }
-.hora {
-  height: 60px;
+.hora2 {
   width: 140px;
   background-color: rgb(194, 189, 183);
   margin: auto;
-}
-.data {
-  height: 60px;
-  width: 140px;
-  background-color: antiquewhite;
+  font-weight: bold;
+  border: black 2px solid;
 }
 
 .amagar-data {
@@ -81,61 +130,72 @@
 .btn-date {
   margin: auto;
 }
-
+/*  */
+/* rellotge analogic */
 .rellotge {
-  border-radius: 100%;
-  border: 1px solid #db1709;
-  width: 250px;
-  height: 250px;
-  margin: auto;
   position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+
+  border-radius: 50%;
+  background-color: black;
 }
 
 .segons {
   position: absolute;
-  height: 3px;
-  width: 50px;
-  border: 1px solid #09db25;
-  margin: auto;
-  top: 120px;
+  top: 0px;
   left: 100px;
+  width: 2px;
+  height: 100px;
+  background-color: red;
   transform-origin: bottom center;
 }
 .minuts {
   position: absolute;
-  height: 3px;
-  width: 90px;
+  height: 90px;
+  width: 2px;
   border: 1px solid #090cdb;
   margin: auto;
-  top: 120px;
-  left: 80px;
+  top: 10px;
+  left: 100px;
+  transform-origin: bottom center;
 }
 
 .hora {
   position: absolute;
-  height: 3px;
-  width: 120px;
+  height: 50px;
+  width: 2px;
   border: 1px solid #53c24f;
   margin: auto;
-  top: 113px;
-  left: 70px;
+  top: 50px;
+  left: 100px;
+  transform-origin: bottom center;
 }
 .tres {
-  position: absolute;
-  margin: auto;
-  top: 100px;
-  left: 220px;
+  right: 0;
+  top: 70px;
+  color: white;
 }
 
 .sis {
-  position: absolute;
-  margin: auto;
-  top: 200px;
-  left: 120px;
+  bottom: 0;
+  left: 90px;
+  color: white;
 }
 .nou {
+  top: 70px;
+  left: 0px;
+  color: white;
+}
+.dotze {
+  left: 90px;
+  top: 0px;
+  color: white;
+}
+
+.nhora {
+  width: 20px;
+  height: 20px;
   position: absolute;
-  margin: auto;
-  right: 220px;
-  top: 100px;
 }
