@@ -215,3 +215,18 @@ li {
     width: 100%;
   }
 }
+
+/* toggle button */
+.botongrey {
+  background-color: grey;
+}
+.botongold {
+  background-color: gold;
+}
+.caja-paraula {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(218, 204, 204);
+  margin: auto;
+}
+/*  */

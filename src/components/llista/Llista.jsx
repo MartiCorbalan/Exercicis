@@ -6,6 +6,7 @@ import Tresenratlla from "../tres-en-ratlla/Tresenratlla";
 import Sumarnums from "../sumarnumeros/Sumarnums";
 import Rellotgeanalogic from "../rellotge-analogic/Rellotgeanalogic";
 import Rellotge from "../rellotge-digital/Rellotge";
+import Togglebutton from "../toggle-button/Togglebutton";
 
 const Llista = [
   { path: "comptador", titol: "Comptador", element: <Contador /> },
@@ -24,6 +25,7 @@ const Llista = [
     element: <Rellotgeanalogic />,
   },
   { path: "rellotge", titol: "Rellotge", element: <Rellotge /> },
+  { path: "toggle-button", titol: "toggle button", element: <Togglebutton /> },
 ];
 
 export default Llista;
