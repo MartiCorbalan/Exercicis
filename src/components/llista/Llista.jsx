@@ -8,6 +8,7 @@ import Rellotgeanalogic from "../rellotge-analogic/Rellotgeanalogic";
 import Rellotge from "../rellotge-digital/Rellotge";
 import Togglebutton from "../toggle-button/Togglebutton";
 import Groupbutton from "../group-button/Groupbutton";
+import ExArray1 from "../exercici-1-array/ExArray1";
 const Llista = [
   { path: "comptador", titol: "Comptador", element: <Contador /> },
   { path: "graella", titol: "Graella de fotos", element: <Graella /> },
@@ -27,6 +28,7 @@ const Llista = [
   { path: "rellotge", titol: "Rellotge", element: <Rellotge /> },
   { path: "toggle-button", titol: "toggle button", element: <Togglebutton /> },
   { path: "group-button", titol: "group button", element: <Groupbutton /> },
+  {path: "Ex-array-1", titol: "ex array 1", element: <ExArray1/>}
 ];
 
 export default Llista;

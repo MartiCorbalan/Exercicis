@@ -4,7 +4,7 @@ export default function Layout() {
   return (
     <>
       <nav>
-        <ul id="menuu">
+        <ul >
           {Llista.map((item) => (
             <li>
               <Link to={item.path}>{item.titol}</Link>

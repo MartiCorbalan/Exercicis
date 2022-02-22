@@ -1,5 +1,5 @@
 /* navbar */
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ ul {
 
 li {
   float: left;
-}
+} */
 
 .title-main {
   margin: 0 auto 0 770px;
