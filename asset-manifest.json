@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/marticorbalan.github.io/exercicis/static/css/main.b1ba920e.css",
+    "main.js": "/marticorbalan.github.io/exercicis/static/js/main.4df76db5.js",
+    "index.html": "/marticorbalan.github.io/exercicis/index.html",
+    "main.b1ba920e.css.map": "/marticorbalan.github.io/exercicis/static/css/main.b1ba920e.css.map",
+    "main.4df76db5.js.map": "/marticorbalan.github.io/exercicis/static/js/main.4df76db5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1ba920e.css",
+    "static/js/main.4df76db5.js"
+  ]
+}
