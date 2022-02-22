@@ -7,7 +7,7 @@ import Sumarnums from "../sumarnumeros/Sumarnums";
 import Rellotgeanalogic from "../rellotge-analogic/Rellotgeanalogic";
 import Rellotge from "../rellotge-digital/Rellotge";
 import Togglebutton from "../toggle-button/Togglebutton";
-
+import Groupbutton from "../group-button/Groupbutton";
 const Llista = [
   { path: "comptador", titol: "Comptador", element: <Contador /> },
   { path: "graella", titol: "Graella de fotos", element: <Graella /> },
@@ -26,6 +26,7 @@ const Llista = [
   },
   { path: "rellotge", titol: "Rellotge", element: <Rellotge /> },
   { path: "toggle-button", titol: "toggle button", element: <Togglebutton /> },
+  { path: "group-button", titol: "group button", element: <Groupbutton /> },
 ];
 
 export default Llista;
