@@ -200,3 +200,18 @@ li {
   height: 20px;
   position: absolute;
 }
+
+@media (max-width: 700px) {
+  ul {
+    width: 100%;
+    height: 50px;
+  }
+  li {
+    display: block;
+    width: 60px;
+  }
+  .title-main {
+    margin: 0 auto 0 190px;
+    width: 100%;
+  }
+}
