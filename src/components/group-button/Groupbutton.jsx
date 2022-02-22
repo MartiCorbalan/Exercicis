@@ -7,6 +7,7 @@ function Groupbutton() {
     console.log("hola");
 
     setButton(index);
+    /* setButton(index); */
   };
 
   return (
