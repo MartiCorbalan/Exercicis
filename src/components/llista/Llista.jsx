@@ -9,6 +9,10 @@ import Rellotge from "../rellotge-digital/Rellotge";
 import Togglebutton from "../toggle-button/Togglebutton";
 import Groupbutton from "../group-button/Groupbutton";
 import ExArray1 from "../exercici-1-array/ExArray1";
+import ExArray2 from "../exercici-2-array/ExArray2";
+import ExArray3 from "../exercici-3-array/ExArray3";
+import ExArray4 from "../exercici-4-array/ExArray4";
+import ExArray5 from "../exercici-5-array/ExArray5";
 const Llista = [
   { path: "comptador", titol: "Comptador", element: <Contador /> },
   { path: "graella", titol: "Graella de fotos", element: <Graella /> },
@@ -28,7 +32,11 @@ const Llista = [
   { path: "rellotge", titol: "Rellotge", element: <Rellotge /> },
   { path: "toggle-button", titol: "toggle button", element: <Togglebutton /> },
   { path: "group-button", titol: "group button", element: <Groupbutton /> },
-  {path: "Ex-array-1", titol: "ex array 1", element: <ExArray1/>}
+  { path: "Ex-array-1", titol: "ex array 1", element: <ExArray1 /> },
+  { path: "Ex-array-2", titol: "ex array 2", element: <ExArray2 /> },
+  { path: "Ex-array-3", titol: "ex array 3", element: <ExArray3 /> },
+  { path: "Ex-array-4", titol: "ex array 4", element: <ExArray4 /> },
+  { path: "Ex-array-5", titol: "ex array 5", element: <ExArray5 /> },
 ];
 
 export default Llista;
