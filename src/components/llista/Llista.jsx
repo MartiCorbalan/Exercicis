@@ -13,6 +13,12 @@ import ExArray2 from "../exercici-2-array/ExArray2";
 import ExArray3 from "../exercici-3-array/ExArray3";
 import ExArray4 from "../exercici-4-array/ExArray4";
 import ExArray5 from "../exercici-5-array/ExArray5";
+import ExArray6 from "../exercici-6-arrays/ExArray6";
+import CounteruseState from "../contador-useState/CounteruseState";
+import CounteruseReducer from "../contador-useReducer/CounteruseReducer";
+import UseReducerPatrons from "../contador-useReducer-patrons/UseReducerPatrons";
+import CounterRedux from "../counter-redux/CounterRedux";
+import CounterReduxPatrons from "../contador-redux-patrons/CounterReduxPatrons";
 const Llista = [
   { path: "comptador", titol: "Comptador", element: <Contador /> },
   { path: "graella", titol: "Graella de fotos", element: <Graella /> },
@@ -37,6 +43,32 @@ const Llista = [
   { path: "Ex-array-3", titol: "ex array 3", element: <ExArray3 /> },
   { path: "Ex-array-4", titol: "ex array 4", element: <ExArray4 /> },
   { path: "Ex-array-5", titol: "ex array 5", element: <ExArray5 /> },
+  { path: "Ex-array-6", titol: "ex array 6", element: <ExArray6 /> },
+  {
+    path: "CounteruseState",
+    titol: "counteruseState",
+    element: <CounteruseState />,
+  },
+  {
+    path: "CounteruseReducer",
+    titol: "counteruseReducer",
+    element: <CounteruseReducer />,
+  },
+  {
+    path: "UseReducerPatrons",
+    titol: "UseReducerPatrons",
+    element: <UseReducerPatrons />,
+  },
+  {
+    path: "CounterRedux",
+    titol: "CounterRedux",
+    element: <CounterRedux />,
+  },
+  {
+    path: "CounterReduxPatrons",
+    titol: "CounterReduxPatrons",
+    element: <CounterReduxPatrons />,
+  },
 ];
 
 export default Llista;
