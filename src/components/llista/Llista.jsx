@@ -19,6 +19,8 @@ import CounteruseReducer from "../contador-useReducer/CounteruseReducer";
 import UseReducerPatrons from "../contador-useReducer-patrons/UseReducerPatrons";
 import CounterRedux from "../counter-redux/CounterRedux";
 import CounterReduxPatrons from "../contador-redux-patrons/CounterReduxPatrons";
+import GraellaUseReducer from "../graella-use-reducer/GraellaUseReducer";
+import GraellaUseReducerPatrons from "../graella-use-reducer-patrons/GraellaUseReducerPatrons";
 const Llista = [
   { path: "comptador", titol: "Comptador", element: <Contador /> },
   { path: "graella", titol: "Graella de fotos", element: <Graella /> },
@@ -55,8 +57,8 @@ const Llista = [
     element: <CounteruseReducer />,
   },
   {
-    path: "UseReducerPatrons",
-    titol: "UseReducerPatrons",
+    path: "CounterUseReducerPatrons",
+    titol: "CounterUseReducerPatrons",
     element: <UseReducerPatrons />,
   },
   {
@@ -68,6 +70,16 @@ const Llista = [
     path: "CounterReduxPatrons",
     titol: "CounterReduxPatrons",
     element: <CounterReduxPatrons />,
+  },
+  {
+    path: "GraellaUseReducer",
+    titol: "GraellaUseReducer",
+    element: <GraellaUseReducer />,
+  },
+  {
+    path: "GraellaUseReducerPatrons",
+    titol: "GraellaUseReducerPatrons",
+    element: <GraellaUseReducerPatrons />,
   },
 ];
 

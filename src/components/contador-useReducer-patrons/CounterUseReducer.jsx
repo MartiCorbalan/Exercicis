@@ -9,6 +9,7 @@ export default function CounterUseReducer() {
       <div>{count}</div>
       <button onClick={() => dispatch(increment(+1))}>+1</button>
       <button onClick={() => dispatch(increment(-1))}>-1</button>
+      <button onClick={() => dispatch(increment(+5))}>+5</button>
       <button onClick={() => dispatch(reset())}>reset</button>
     </>
   );

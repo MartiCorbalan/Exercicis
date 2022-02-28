@@ -1,12 +1,9 @@
 import React, { Component } from "react";
+import { useReducer } from "react";
 
-import "./App.css";
+function GraellaUseReducer() {
+  /* const [count, dispatch] = useReducer((input, posicio) => input == posicio, 0); */
 
-import Imagen from "./component/Imagen";
-
-import { useState } from "react";
-
-function Graella() {
   let imatges = [
     "https://www.bbva.com/wp-content/uploads/2021/03/animales-peligro-extincion-sostenibilidad-bbva.jpg",
 
@@ -17,15 +14,17 @@ function Graella() {
     "https://www.fundacion-affinity.org/sites/default/files/dia-de-los-animales.jpg",
   ];
 
-  const [posicio, setPosicio] = useState(null);
-
-  const fullscreen = (input) => {
-    if (input === posicio) {
-      setPosicio(null);
+  const [posicio, dispatch] = useReducer((state, input) => {
+    if (input === state) {
+      return null;
     } else {
       console.log("click" + input);
-      setPosicio(input);
+      return input;
     }
+  }, null);
+
+  const fullscreen = (input) => {
+    dispatch(input);
   };
 
   return (
@@ -33,23 +32,20 @@ function Graella() {
       {" "}
       <br />
       <div className="graella">
-        <h2>Graella de fotos </h2>
+        <h2>Graella de fotos use Reducer</h2>
         <div className="imatges">
           {imatges.map(
             (
               imatge,
               index //imatge es el valor i index la posicio del array
             ) => (
-              <Imagen
+              <img
+                key={index}
+                alt={index}
                 src={imatge}
-                funcioClicar={fullscreen}
-                clas={
-                  index === posicio
-                    ? "fullscreen" //si la posicion es la misma que la imagen, aplicamos la classe fullscreen
-                    : ""
-                }
-                nimg={index}
-              />
+                onClick={() => fullscreen(index)}
+                className={index === posicio ? "fullscreen Avatar" : "Avatar"}
+              ></img>
             )
           )}
         </div>
@@ -58,4 +54,4 @@ function Graella() {
   );
 }
 
-export default Graella;
+export default GraellaUseReducer;

@@ -1,6 +1,6 @@
-const INCREMENT = "INCREMENT";
-export function increment(amount) {
-  return { type: INCREMENT, amount };
+const OPERACIO = "OPERACIO";
+export function Operacio(amount) {
+  return { type: OPERACIO, amount };
 }
 const RESET = "RESET";
 export function reset() {
@@ -8,7 +8,7 @@ export function reset() {
 }
 export function counter(state, action) {
   switch (action.type) {
-    case INCREMENT:
+    case OPERACIO:
       if (state + action.amount < 0) {
         return 0;
       } else if (state + action.amount > 10) {
